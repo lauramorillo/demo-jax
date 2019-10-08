@@ -17,3 +17,5 @@ gcloud compute instances create ${VM_NAME} \
     --metadata-from-file startup-script=./startup.sh \
     --zone us-central1-f \
     --tags ${VM_NAME}
+
+# watch gcloud compute instances get-serial-port-output ${VM_NAME} --zone us-central1-f
