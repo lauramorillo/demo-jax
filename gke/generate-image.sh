@@ -1,5 +1,5 @@
 #! /bin/bash
-PROJECT_ID=jax-london-255110 
+PROJECT_ID=[[YOUR_PROJECT]]
 VERSION=1
 TAG=gcr.io/${PROJECT_ID}/demo:gke${VERSION}
 docker build ../baseApp/demo -t ${TAG}
