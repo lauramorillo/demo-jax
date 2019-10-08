@@ -13,10 +13,7 @@ gcloud compute firewall-rules create ${VM_NAME}-allow-http-8080 \
     --description "Allow port 8080 access to http-server"
 
 gcloud compute instances create ${VM_NAME} \
-    --image-family=debian-8 \
-    --image-project=debian-cloud \
     --machine-type=g1-small \
     --metadata-from-file startup-script=./startup.sh \
     --zone us-central1-f \
     --tags ${VM_NAME}
-    
