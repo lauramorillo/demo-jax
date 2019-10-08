@@ -1,5 +1,5 @@
 #! /bin/bash
-BUCKET_NAME=laura-jax-demo
+BUCKET_NAME=[UNIQUE_BUCKET_NAME]
 JAR_NAME=demo-0.0.1-SNAPSHOT.jar
 VM_NAME=demov1 
 
