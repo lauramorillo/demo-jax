@@ -2,6 +2,8 @@
 PROJECT_ID=[YOUR_PROJECT]
 VERSION=1
 TAG=gcr.io/${PROJECT_ID}/demo:gke${VERSION}
+
+mvn install -f ../baseApp/demo/pom.xml
 docker build ../baseApp/demo -t ${TAG}
 
 docker push ${TAG}
